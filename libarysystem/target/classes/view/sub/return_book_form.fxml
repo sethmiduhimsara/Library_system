@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="717.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.codepro.controller.sub.returnbookformcontroller">
+   <children>
+      <TableView fx:id="tblnotreturnbookrecord" layoutX="17.0" layoutY="126.0" prefHeight="396.0" prefWidth="956.0">
+        <columns>
+          <TableColumn fx:id="colrecordid" prefWidth="145.0" text="Record ID" />
+          <TableColumn fx:id="colbookid" minWidth="5.0" prefWidth="158.0" text="Book ID" />
+            <TableColumn fx:id="colbookname" minWidth="5.0" prefWidth="158.0" text="Book Name" />
+            <TableColumn fx:id="colmembername" minWidth="5.0" prefWidth="158.0" text="Member Name" />
+            <TableColumn fx:id="colmemberid" minWidth="5.0" prefWidth="158.0" text="Member ID" />
+            <TableColumn fx:id="colreturndate" minWidth="5.0" prefWidth="175.0" text="Return date" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtsearchkeyword" layoutX="41.0" layoutY="56.0" prefHeight="31.0" prefWidth="244.0" />
+      <RadioButton fx:id="rdbookid" layoutX="299.0" layoutY="61.0" mnemonicParsing="false" text="Book ID">
+         <toggleGroup>
+            <ToggleGroup fx:id="tik" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdmembernumber" layoutX="404.0" layoutY="61.0" mnemonicParsing="false" text="Member number" toggleGroup="$tik" />
+      <RadioButton fx:id="rdmemberid" layoutX="576.0" layoutY="61.0" mnemonicParsing="false" text="member ID" toggleGroup="$tik" />
+      <Label layoutX="23.0" layoutY="550.0" prefHeight="21.0" prefWidth="179.0" text="Late Date Count">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfineforoneday" layoutX="202.0" layoutY="597.0" prefHeight="38.0" prefWidth="139.0" promptText="fine for one day" />
+      <Label fx:id="lbllatedatedount" layoutX="202.0" layoutY="553.0" prefHeight="31.0" prefWidth="139.0" />
+      <Label fx:id="totalfinecount" layoutX="203.0" layoutY="654.0" prefHeight="31.0" prefWidth="139.0" />
+      <Button layoutX="583.0" layoutY="596.0" mnemonicParsing="false" onAction="#btnmarkasreturnOnAction" prefHeight="31.0" prefWidth="302.0" text="Mark As Returnd" />
+      <TextField fx:id="txtpayment" layoutX="644.0" layoutY="550.0" promptText="payment" />
+      <Label layoutX="621.0" layoutY="652.0" prefHeight="31.0" prefWidth="71.0" text="Balance">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblbalance" layoutX="711.0" layoutY="653.0" prefHeight="31.0" prefWidth="170.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="654.0" prefHeight="30.0" prefWidth="71.0" text="Total">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

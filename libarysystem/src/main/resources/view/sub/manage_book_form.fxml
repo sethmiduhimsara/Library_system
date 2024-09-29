@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="717.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.codepro.controller.sub.managebookformcontroller">
+   <children>
+      <TextField fx:id="txtbokid" layoutX="57.0" layoutY="30.0" onAction="#bookicOnAction" prefHeight="31.0" prefWidth="256.0" promptText="Book ID" />
+      <TextField fx:id="txtbookname" layoutX="57.0" layoutY="76.0" prefHeight="31.0" prefWidth="256.0" promptText="Book Name" />
+      <TextField fx:id="txtbookisbn" layoutX="57.0" layoutY="120.0" prefHeight="31.0" prefWidth="256.0" promptText="ISBN" />
+      <TextField fx:id="txtbookprice" layoutX="57.0" layoutY="168.0" prefHeight="31.0" prefWidth="256.0" promptText="Price" />
+      <ComboBox fx:id="bookpublisher" layoutX="57.0" layoutY="219.0" prefHeight="31.0" prefWidth="256.0" promptText="Select Publisher" />
+      <ComboBox fx:id="maincategory" layoutX="57.0" layoutY="269.0" prefHeight="31.0" prefWidth="256.0" promptText="Select main category" />
+      <TableView fx:id="subcategorytable" layoutX="26.0" layoutY="315.0" prefHeight="152.0" prefWidth="298.0">
+        <columns>
+          <TableColumn fx:id="uncategorizable" prefWidth="128.0" text="category" />
+          <TableColumn fx:id="coloptiontable" prefWidth="127.0" text="option" />
+        </columns>
+      </TableView>
+      <Button layoutX="30.0" layoutY="656.0" mnemonicParsing="false" onAction="#btnsaveOnAction" prefHeight="31.0" prefWidth="116.0" text="Save" />
+      <Button layoutX="162.0" layoutY="656.0" mnemonicParsing="false" onAction="#btnupdateOnAction" prefHeight="31.0" prefWidth="116.0" text="Update" />
+      <Button layoutX="297.0" layoutY="656.0" mnemonicParsing="false" onAction="#btndeleteOnAction" prefHeight="31.0" prefWidth="116.0" text="Delete" />
+      <Button layoutX="437.0" layoutY="656.0" mnemonicParsing="false" onAction="#btnclearOnAction" prefHeight="31.0" prefWidth="116.0" text="Clear" />
+      <TableView fx:id="mainbooktable" layoutX="337.0" layoutY="25.0" prefHeight="616.0" prefWidth="635.0">
+        <columns>
+          <TableColumn fx:id="mainbookidcol" prefWidth="128.0" text="Book ID" />
+          <TableColumn fx:id="mainbooknamecol" prefWidth="172.0" text="Book NAme" />
+            <TableColumn fx:id="mainbookisbncol" prefWidth="142.0" text="ISBN" />
+            <TableColumn fx:id="mainbookpricecol" prefWidth="192.0" text="Price" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblauthors" layoutX="26.0" layoutY="479.0" prefHeight="162.0" prefWidth="298.0">
+         <columns>
+            <TableColumn fx:id="colauthorname" prefWidth="128.0" text="Author name" />
+            <TableColumn fx:id="colauthoroption" prefWidth="127.0" text="option" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

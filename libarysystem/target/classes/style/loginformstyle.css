@@ -1,0 +1,39 @@
+#subanchorpane1{
+    -fx-background-color:#383637;
+
+}
+#subanchorpane2{
+    -fx-background-color: #EFE9E8;
+}
+#mainanchorpane{
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+}
+.roundconner{
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+}
+.buttonconner{
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: black;
+}
+.buttonconner:hover{
+    -fx-effect: dropshadow(three-pass-box,rgba(151,236,212,0.8),10,0.9,0,0);
+}
+.buttonconner:pressed{
+    -fx-effect: dropshadow(three-pass-box, rgba(82, 188, 236, 0.8),10,0.9,0,0);
+}
+
+#regancharpane1{
+    -fx-background-color: #EFE9E8;
+}
+.nameconner{
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+}    
+.buttonsignconner{
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: black;
+}

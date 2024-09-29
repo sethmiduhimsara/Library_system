@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="717.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.codepro.controller.sub.managememberformcontroller">
+   <children>
+      <TextField fx:id="txtmemberid" layoutX="58.0" layoutY="52.0" onAction="#txtmemberidsearchOnAction" prefHeight="31.0" prefWidth="246.0" promptText="Member ID" />
+      <TextField fx:id="txtmembername" layoutX="58.0" layoutY="107.0" prefHeight="31.0" prefWidth="246.0" promptText="Member Name" />
+      <TextField fx:id="txtmemberadress" layoutX="57.0" layoutY="168.0" prefHeight="31.0" prefWidth="246.0" promptText="Member Address" />
+      <TextField fx:id="txtmemberemail" layoutX="57.0" layoutY="227.0" onAction="#txtmemberemailOnAction" prefHeight="31.0" prefWidth="246.0" promptText="Member Email" />
+      <TextField fx:id="txtmembercontact" layoutX="56.0" layoutY="289.0" onAction="#txtmemberecontactOnAction" prefHeight="31.0" prefWidth="246.0" promptText="Member Contact" />
+      <Button layoutX="29.0" layoutY="365.0" mnemonicParsing="false" onAction="#btnsaveOnAction" prefHeight="31.0" prefWidth="131.0" text="Save Customer" />
+      <Button layoutX="183.0" layoutY="365.0" mnemonicParsing="false" onAction="#btnupdateOnAction" prefHeight="31.0" prefWidth="131.0" text="update Customer" />
+      <Button layoutX="28.0" layoutY="426.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="131.0" text="Delete Customer" />
+      <Button layoutX="181.0" layoutY="426.0" mnemonicParsing="false" onAction="#btnclearOnAction" prefHeight="31.0" prefWidth="135.0" text="Clear" />
+      <TableView fx:id="tblmember" layoutX="330.0" layoutY="32.0" prefHeight="521.0" prefWidth="631.0">
+        <columns>
+          <TableColumn fx:id="colmemberid" prefWidth="115.0" text="Member ID" />
+          <TableColumn fx:id="colmembername" prefWidth="133.0" text="Member Name" />
+            <TableColumn fx:id="colmemberadress" prefWidth="124.0" text="Member Adress" />
+            <TableColumn fx:id="colmemberemail" prefWidth="126.0" text="Member Email" />
+            <TableColumn fx:id="colmembercontact" prefWidth="127.0" text="Memb_Contact" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="625.0" prefWidth="1176.0" stylesheets="@../style/loginformstyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.codepro.controller.loginformcontroller">
+   <children>
+      <AnchorPane fx:id="mainanchorpane" layoutX="32.0" layoutY="44.0" prefHeight="546.0" prefWidth="1093.0">
+         <children>
+            <AnchorPane fx:id="subanchorpane1" layoutX="3.0" layoutY="5.0" prefHeight="547.0" prefWidth="332.0">
+               <children>
+                  <Label layoutX="79.0" layoutY="124.0" prefHeight="86.0" prefWidth="172.0" text="WELCOME" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="109.0" layoutY="198.0" prefHeight="46.0" prefWidth="172.0" text="To the" textFill="WHITE">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="73.0" layoutY="248.0" prefHeight="40.0" prefWidth="186.0" text="Libary system" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="subanchorpane2" layoutX="323.0" layoutY="3.0" prefHeight="547.0" prefWidth="770.0">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="377.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asscets/img/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="334.0" layoutY="21.0" prefHeight="31.0" prefWidth="110.0" text="Login" textFill="#b50000" textOverrun="CLIP">
+                     <font>
+                        <Font name="Bell MT" size="34.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtusername" layoutX="273.0" layoutY="123.0" prefHeight="40.0" prefWidth="255.0" promptText="User name" styleClass="roundconner" />
+                  <PasswordField fx:id="pwdpasswordfield" layoutX="273.0" layoutY="229.0" prefHeight="40.0" prefWidth="255.0" />
+                  <TextField fx:id="txtpassword" layoutX="272.0" layoutY="228.0" prefHeight="40.0" prefWidth="255.0" promptText="password" styleClass="roundconner" />
+                  <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="378.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asscets/img/padlock.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="340.0" layoutY="332.0" mnemonicParsing="false" onAction="#btnloginOnAction" prefHeight="46.0" prefWidth="110.0" styleClass="buttonconner" text="LOG IN" textFill="WHITE" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="28.0" layoutY="462.0" stroke="BLACK" strokeType="INSIDE" width="255.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="512.0" layoutY="462.0" stroke="BLACK" strokeType="INSIDE" width="247.0" />
+                  <Button layoutX="296.0" layoutY="447.0" mnemonicParsing="false" onAction="#btncreateaccountOnAction" prefHeight="31.0" prefWidth="201.0" styleClass="buttonconner" text="Create Account" textFill="#f8f8f8" />
+                  <Hyperlink layoutX="266.0" layoutY="274.0" text="Forget Password" />
+                  <Button layoutX="554.0" layoutY="236.0" mnemonicParsing="false" onAction="#btnviewandhideOnAction" prefHeight="31.0" prefWidth="82.0" text="View" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
